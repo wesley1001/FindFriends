@@ -4,6 +4,9 @@ import android.os.Bundle;
 
 import com.ashkin.findfriends.R;
 
+/**
+ * Main Activity
+ */
 public class MainActivity extends BaseActivity {
 
     @Override

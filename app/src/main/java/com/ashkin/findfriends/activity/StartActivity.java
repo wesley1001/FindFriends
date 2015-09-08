@@ -1,11 +1,12 @@
 package com.ashkin.findfriends.activity;
 
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import com.ashkin.findfriends.R;
 
+/**
+ * Start Activity
+ */
 public class StartActivity extends BaseActivity {
 
     @Override
