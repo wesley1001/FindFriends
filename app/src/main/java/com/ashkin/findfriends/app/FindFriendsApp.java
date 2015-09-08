@@ -64,7 +64,7 @@ public class FindFriendsApp extends Application {
      * @param activity Activity object
      */
     public static void addActivity(Activity activity) {
-        LogUtil.i(TAG, "addActivity : " + activity.getComponentName());
+        LogUtil.i(TAG, "addActivity : " + activity.getComponentName().getClassName());
 
         activities.add(activity);
     }
@@ -75,7 +75,7 @@ public class FindFriendsApp extends Application {
      * @param activity Activity object
      */
     public static void removeActivity(Activity activity) {
-        LogUtil.i(TAG, "removeActivity : " + activity.getComponentName());
+        LogUtil.i(TAG, "removeActivity : " + activity.getComponentName().getClassName());
 
         activities.remove(activity);
     }
@@ -87,7 +87,7 @@ public class FindFriendsApp extends Application {
     public static void finishAll() {
         for (Activity activity : activities) {
             if (!activity.isFinishing()) {
-                LogUtil.i(TAG, "finishActivity : " + activity.getComponentName());
+                LogUtil.i(TAG, "finishActivity : " + activity.getComponentName().getClassName());
 
                 activity.finish();
             }
