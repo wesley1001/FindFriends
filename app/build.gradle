@@ -24,4 +24,8 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':actionbarsherlock')
     compile project(':slidingmenu')
+    //bmob-sdk ：Bmob的android sdk包
+    //bmob-push：Bmob的推送包
+    compile files('libs/Bmob_Push_V0.6beta_20150408.jar')
+    compile files('libs/BmobSDK_V3.4.3_0828.jar')
 }

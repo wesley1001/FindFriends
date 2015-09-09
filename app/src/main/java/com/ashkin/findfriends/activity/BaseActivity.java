@@ -1,11 +1,15 @@
 package com.ashkin.findfriends.activity;
 
+import android.app.Activity;
 import android.os.Bundle;
 
 import com.ashkin.findfriends.R;
+import com.ashkin.findfriends.app.Config;
 import com.ashkin.findfriends.app.FindFriendsApp;
 import com.ashkin.findfriends.util.LogUtil;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
+
+import cn.bmob.v3.Bmob;
 
 /**
  * Base Activity
@@ -14,6 +18,8 @@ public class BaseActivity extends SlidingFragmentActivity {
 
     public static final String TAG = "BaseActivity";
 
+    protected Activity context;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +27,14 @@ public class BaseActivity extends SlidingFragmentActivity {
         LogUtil.i(TAG, getClass().getSimpleName() + " : onCreate ");
 
         // set SlidingMenu layout
+        LogUtil.i(TAG, "setBehindContentView");
         setBehindContentView(R.layout.layout_account);
+
+        // initialize Bmob SDK
+        LogUtil.i(TAG, "initialize Bmob SDK");
+        Bmob.initialize(this, Config.BMOB_APPLICATION_ID);
+
+        context = this;
 
         FindFriendsApp.addActivity(this);
     }

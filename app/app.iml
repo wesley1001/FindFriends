@@ -89,6 +89,8 @@
     <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="support-v4-18.0.0" level="project" />
+    <orderEntry type="library" exported="" name="BmobSDK_V3.4.3_0828" level="project" />
+    <orderEntry type="library" exported="" name="Bmob_Push_V0.6beta_20150408" level="project" />
     <orderEntry type="module" module-name="slidingmenu" exported="" />
     <orderEntry type="module" module-name="actionbarsherlock" exported="" />
   </component>
