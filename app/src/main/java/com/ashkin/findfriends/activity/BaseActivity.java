@@ -7,6 +7,7 @@ import com.ashkin.findfriends.R;
 import com.ashkin.findfriends.app.Config;
 import com.ashkin.findfriends.app.FindFriendsApp;
 import com.ashkin.findfriends.util.LogUtil;
+import com.baidu.mapapi.SDKInitializer;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
 
 import cn.bmob.v3.Bmob;
@@ -33,6 +34,11 @@ public class BaseActivity extends SlidingFragmentActivity {
         // initialize Bmob SDK
         LogUtil.i(TAG, "initialize Bmob SDK");
         Bmob.initialize(this, Config.BMOB_APPLICATION_ID);
+
+        //在使用SDK各组件之前初始化context信息，传入ApplicationContext
+        //注意该方法要再setContentView方法之前实现
+        LogUtil.i(TAG, "initialize BaiduMap SDK");
+        SDKInitializer.initialize(getApplicationContext());
 
         context = this;
 
