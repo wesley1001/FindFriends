@@ -13,7 +13,7 @@ import android.widget.ListView;
  * Activities containing this fragment MUST implement the {@link OnFragmentInteractionListener}
  * interface.
  */
-public class MyFriendsFragment extends ListFragment {
+public class MyFriendsFragment extends BaseListFragment {
 
     private OnFragmentInteractionListener mListener;
 

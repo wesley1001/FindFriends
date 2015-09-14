@@ -1,6 +1,5 @@
 package com.ashkin.findfriends.fragment;
 
-
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +11,7 @@ import com.ashkin.findfriends.R;
 /**
  * Register Fragment
  */
-public class RegisterFragment extends Fragment {
+public class RegisterFragment extends BaseFragment {
 
 
     public RegisterFragment() {

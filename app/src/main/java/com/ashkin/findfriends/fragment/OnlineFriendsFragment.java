@@ -1,19 +1,18 @@
 package com.ashkin.findfriends.fragment;
 
 import android.app.Activity;
-import android.app.ListFragment;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 
 /**
  * A fragment representing a list of Items.
- * <p>
- * <p>
+ * <p/>
+ * <p/>
  * Activities containing this fragment MUST implement the {@link OnFragmentInteractionListener}
  * interface.
  */
-public class OnlineFriendsFragment extends ListFragment {
+public class OnlineFriendsFragment extends BaseListFragment {
 
     private OnFragmentInteractionListener mListener;
 
@@ -68,7 +67,7 @@ public class OnlineFriendsFragment extends ListFragment {
      * fragment to allow an interaction in this fragment to be communicated
      * to the activity and potentially other fragments contained in that
      * activity.
-     * <p>
+     * <p/>
      * See the Android Training lesson <a href=
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.

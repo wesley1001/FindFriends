@@ -7,6 +7,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.ashkin.findfriends.R;
+import com.ashkin.findfriends.fragment.LoginFragment;
 import com.ashkin.findfriends.util.StringUtil;
 
 /**

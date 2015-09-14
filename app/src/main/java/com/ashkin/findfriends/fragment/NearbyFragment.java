@@ -12,7 +12,7 @@ import com.ashkin.findfriends.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class NearbyFragment extends Fragment {
+public class NearbyFragment extends BaseFragment {
 
 
     public NearbyFragment() {
