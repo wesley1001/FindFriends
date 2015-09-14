@@ -1,11 +1,16 @@
 package com.ashkin.findfriends.activity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.ashkin.findfriends.R;
+import com.ashkin.findfriends.util.StringUtil;
 
 /**
- * Start Activity
+ * Login and Register Activity
  */
 public class StartActivity extends BaseActivity {
 
