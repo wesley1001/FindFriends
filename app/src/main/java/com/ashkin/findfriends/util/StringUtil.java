@@ -1,11 +1,15 @@
 package com.ashkin.findfriends.util;
 
+import com.ashkin.findfriends.app.Config;
+
 import java.security.InvalidKeyException;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.NoSuchAlgorithmException;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
@@ -180,5 +184,27 @@ public class StringUtil {
         }
 
         return result;
+    }
+
+    /**
+     * 判断字符串是否为邮箱地址
+     * @param email 邮箱字符串
+     * @return 是否为邮箱地址
+     */
+    public boolean isEmail(String email) {
+        Pattern pattern = Pattern.compile(Config.EMAIL_REGEX);
+        Matcher matcher = pattern.matcher(email);
+        return matcher.matches();
+    }
+
+    /**
+     * 判断字符串是否为数字
+     * @param number 数字字符串
+     * @return 是否为数字
+     */
+    public boolean isNumeric(String number) {
+        Pattern pattern = Pattern.compile(Config.NUMBER_REGEX);
+        Matcher matcher = pattern.matcher(number);
+        return matcher.matches();
     }
 }
