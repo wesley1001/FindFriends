@@ -31,6 +31,13 @@
             android:name="com.baidu.location.f"
             android:enabled="true"
             android:process=":remote" />
+
+        <!--&lt;!&ndash; 网络改变时的广播接收器 &ndash;&gt;-->
+        <!--<receiver android:name=".receiver.NetworkChangeReceiver" >-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.CONFIGURATION_CHANGED" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

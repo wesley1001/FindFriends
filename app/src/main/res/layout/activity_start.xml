@@ -5,4 +5,10 @@
     android:orientation="vertical"
     tools:context=".StartActivity">
 
+    <com.ashkin.findfriends.widget.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.ashkin.findfriends.widget.TitleView>
+
 </LinearLayout>
